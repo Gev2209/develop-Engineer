@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    background-color: rgb(2, 0, 34);
 }
 
 a {
@@ -180,21 +181,20 @@ li {
 /* //////////////////////////////////////////////////////////////////////////// */
 /* start about Section */
 
-/* finish about Section */
-
 
 .backgroundSideWidthText {
     margin-top: 5px;
     height: 60vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,300px);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,300px);
     gap: 10px;
     margin: 10px;
 }
 
 .backgroundSideWidthText div {
-    background: #b1dee688;
+    border-radius: 5px;
+
 }
 
 .backgroundSideWidthText div:nth-child(1) {
@@ -206,6 +206,7 @@ li {
 }
 .backgroundSideWidthText div:nth-child(1):hover {
     opacity: 0.7;
+    transform: scale(0.99);
 }
 .backgroundSideWidthText div:nth-child(2) {
     background-image: url(./react.png);
@@ -216,9 +217,10 @@ li {
 }
 .backgroundSideWidthText div:nth-child(2):hover {
     opacity: 0.7;
+    transform: scale(0.99);
 }
 .backgroundSideWidthText div:nth-child(3) {
-    background-image: url(./python.jpg);
+    background-image: url(./node_js.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -226,6 +228,7 @@ li {
 }
 .backgroundSideWidthText div:nth-child(3):hover {
     opacity: 0.7;
+    transform: scale(0.99);
 }
 .backgroundSideWidthText div:nth-child(4) {
     background-image: url(./c++.jpg);
@@ -236,4 +239,34 @@ li {
 }
 .backgroundSideWidthText div:nth-child(4):hover {
     opacity: 0.7;
+    transform: scale(0.99);
 }
+
+.backgroundSideWidthText div:nth-child(5) {
+    background-image: url(./python.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(5):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+
+.backgroundSideWidthText div:nth-child(6) {
+    background-image: url(./HD-wallpaper-c-sharp-logo-white-silk-texture-c-sharp-emblem-programming-language-c-sharp-silk-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(6):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+
+
+/* finish about Section */
+
+
