@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
     scroll-behavior: smooth;
-    background-color: rgb(2, 0, 34);
+    background-color: rgba(2, 0, 34, 0.826);
 }
 
 a {
@@ -184,7 +184,8 @@ li {
 
 .backgroundSideWidthText {
     margin-top: 5px;
-    height: 60vh;
+    height: 87vh;
+    min-height: 300px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,300px);
@@ -194,7 +195,7 @@ li {
 
 .backgroundSideWidthText div {
     border-radius: 5px;
-
+    
 }
 
 .backgroundSideWidthText div:nth-child(1) {
@@ -266,7 +267,50 @@ li {
     transform: scale(0.99);
 }
 
-
 /* finish about Section */
+/* ///////////////////////////////////////////////////////////////////// */
+/* start portfolio Section */
 
+#portfolio {
+    width: 1100px;
+    min-height: 400px;
+    background-color: #f4e49c73;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.491);
+}
 
+h2 {
+    text-align: center;
+    color: rgb(236, 235, 235);
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 20px 0 20px 0;
+}
+
+.dev {
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.669);
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: .1px;
+    background-color: rgba(2, 17, 72, 0.45);
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+}
+.eng {
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.669);
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: .1px;
+    background-color: rgba(2, 17, 72, 0.45);
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+}
+/* finish portfolio Section */
