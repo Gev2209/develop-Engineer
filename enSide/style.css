@@ -294,7 +294,7 @@ li {
 #portfolio {
     width: 1200px;
     /* min-height: 400px; */
-    background-color: #f4e49c2c;
+    background-color: #f4e49c1d;
     margin: auto;
     border-radius: 10px;
     backdrop-filter: blur(20px);
@@ -347,7 +347,101 @@ h2 .fa-python {
 .portfolio_section {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    padding: 0 20px 30px 20px;
     gap: 20px;
 }
 
 /* finish portfolio Section */
+/* //////////////////////////////////////////////////////////////////////// */
+/* Start contact section */
+#contact {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.contact_form {
+    width: 800px;
+    min-height: 400px;
+    background-color: #ffffff90;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.491);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 600px;
+}
+label {
+    color: white;
+}
+input {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.737);
+    color: #0a0147;
+    box-shadow: 0 0 10px rgba(0, 0, 139, 0.509);
+}
+input::placeholder {
+    font-size: 15px;
+    color: #0a0147;
+}
+.join {
+    text-align: center;
+    background: rgba(10, 1, 71, 0.861);
+    margin-left: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.join:hover {
+    transform: scale(0.99);
+    transition: all ease .5s;
+    box-shadow: 0 8px 10px rgb(42, 87, 103);
+}
+
+.gmail {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    margin-left: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.gmail:hover {
+    transform: scale(0.99);
+    transition: all ease .5s;
+    box-shadow: 0 8px 10px rgb(116, 6, 6);
+}
+
+.git {
+    background-color: rgb(74, 70, 70);
+    text-align: center;
+    margin-left: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.git:hover {
+    transform: scale(0.99);
+    transition: all ease .5s;
+    box-shadow: 0 8px 10px rgba(8, 8, 8, 0.509);
+}
+/* Finish contact section */
