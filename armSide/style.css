@@ -3,6 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
+    background-color: rgba(2, 0, 34, 0.826);
 }
 
 a {
@@ -10,21 +12,27 @@ a {
     color: white;
 }
 
+/* * {
+    border: 1px solid #000;
+} */
+
 li {
     list-style: none;
     cursor: pointer;
 }
-/* start header */
+/* start Header */
 .headerList {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 0;
     padding: 15px 0 15px 0;
-    background: #09003aa4;
+    background: #050020d4;
     color: white;
     position: fixed;
     width: 100%;
     box-shadow: 1px 1px 3px rgb(243, 243, 218);
+    z-index: 999;
 }
 .headerList li:nth-child(1) {
     padding-left: 10px;
@@ -38,14 +46,69 @@ li {
 .main {
     padding: 21px;
 }
-.main:hover {
+/* .main:hover {
     text-decoration: underline;
+} */
+
+.fa-code {
+    color: white;
+    font-size: 25px;
+}
+/* .fa-code:hover {
+    transform: translate(160px,0) rotate(360deg);
+    z-index: 999;
+    transition: all ease 3s;
+} */
+.info {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-left: 10px;
+}
+/* .fa-code:hover + .info {    
+    opacity: 0;
+    transition: all ease 2s;
+} */
+
+.infoLine {
+    position: absolute;
+    left: 27%;
+    top: 70%;
+    border: 2px solid #ffffff;
+    padding: 0 40px 0 20px;
+    cursor: pointer;
 }
 
+.infoLine1 {
+    position: absolute;
+    left: 39%;
+    top: 70%;
+    border: 2px solid #ffffff;
+    padding: 0 68px 0 20px;
+    cursor: pointer;
+}
+.infoLine2 {
+    position: absolute;
+    left: 53%;
+    top: 70%;
+    border: 2px solid #ffffff;
+    padding: 0 87px 0 20px;
+    cursor: pointer;
+}
+.infoLine3 {
+    position: absolute;
+    left: 68%;
+    top: 70%;
+    border: 2px solid #ffffff;
+    padding: 0 74px 0 20px;
+    cursor: pointer;
+}
 
-/*finish Header */
-
-
+.rus img:hover {
+    transform: translate(0,10px);
+    transition: all ease 3s;
+}
+/* finish Header */
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
 /* start img Section */
 
 .sectionImg {
@@ -53,10 +116,351 @@ li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+.sectionImg ul {
+    color: white;
+}
+.sectionImg li {
+    margin: 20px;
+    cursor: default;
 }
 
+.sectionImg h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.sectionImg h3 {
+    font-size: 30px;
+}
+
+.sectionImg li button {
+    cursor: pointer;
+    padding: 8px 0px 8px 0px;
+    border-radius: 2px;
+    width: 10%;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    background-color: blue;
+    color: white;
+    box-shadow: 0 4px 5px rgba(255, 255, 255, 0.42);
+    z-index: 999;
+}
+
+#text {
+    border: none;
+    padding: 8px 0px 8px 0px;
+    border-radius: 2px;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.66);
+    backdrop-filter: blur(2px);
+    padding-left: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 139, 0.61);
+}
+.sectionImg li button:hover {
+    background-color: rgb(173, 173, 248);
+    color: rgb(3, 1, 66);
+    box-shadow: 0 4px 10px rgba(0, 0, 139, 0.61);
+}
+#text::placeholder {
+    /* padding-left: 10px; */
+    font-size: 15px;
+    color: rgba(3, 1, 66, 0.662);
+    font-weight: 100;
+    font-family: sans-serif;
+}
 /* finish img Section */
+/* //////////////////////////////////////////////////////////////////////////// */
+/* start about Section */
 
+.lesson {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.753));
+}
 
+.backgroundSideWidthText {
+    margin-top: 5px;
+    height: 87vh;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,300px);
+    gap: 10px;
+    margin: 10px;
+}
+
+.backgroundSideWidthText div {
+    border-radius: 5px;
+    
+}
+
+.backgroundSideWidthText div:nth-child(1) {
+    background-image: url(./js.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(1):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+.backgroundSideWidthText div:nth-child(2) {
+    background-image: url(./react.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(2):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+.backgroundSideWidthText div:nth-child(3) {
+    background-image: url(./node_js.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(3):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+.backgroundSideWidthText div:nth-child(4) {
+    background-image: url(./c++.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(4):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+
+.backgroundSideWidthText div:nth-child(5) {
+    background-image: url(./python.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(5):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+
+.backgroundSideWidthText div:nth-child(6) {
+    background-image: url(./HD-wallpaper-c-sharp-logo-white-silk-texture-c-sharp-emblem-programming-language-c-sharp-silk-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.backgroundSideWidthText div:nth-child(6):hover {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+
+/* finish about Section */
+/* ///////////////////////////////////////////////////////////////////// */
+/* start portfolio Section */
+.intro {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.655));
+}
+
+#portfolio {
+    width: 1200px;
+    /* min-height: 400px; */
+    background-color: #f4e49c1d;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.491);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(236, 235, 235);
+    font-size: 20px;
+}
+h2 .fa-square-js {
+    color: yellow;
+}
+h2 .fa-react {
+    color: blue;
+}
+h2 .fa-node-js{
+    color: lightgreen;
+}
+h2 .fa-python {
+    color: lightblue;
+}
+
+.dev {
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.669);
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: .1px;
+    background-color: rgba(2, 17, 72, 0.45);
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+}
+.eng {
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.669);
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: .1px;
+    background-color: rgba(2, 17, 72, 0.45);
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+}
+
+.portfolio_section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 20px 30px 20px;
+    gap: 20px;
+}
+
+/* finish portfolio Section */
+/* //////////////////////////////////////////////////////////////////////// */
+/* Start contact section */
+#contact {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.contact_form {
+    width: 800px;
+    min-height: 400px;
+    background-color: #ffffff90;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.491);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 600px;
+}
+label {
+    color: white;
+}
+input {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.737);
+    color: #0a0147;
+    box-shadow: 0 0 10px rgba(0, 0, 139, 0.509);
+}
+input::placeholder {
+    font-size: 15px;
+    color: #0a0147;
+}
+input:hover {
+    transform: scale(0.99);
+}
+.join {
+    text-align: center;
+    /* background: rgba(10, 1, 71, 0.861); */
+    border: 1px solid #00000087;
+    margin-left: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.676);
+}
+.join:hover {
+    transform: scale(0.99);
+    transition: all ease .5s;
+    box-shadow: 0 8px 10px rgb(42, 87, 103);
+    background: rgba(10, 1, 71, 0.861);
+    color: white;
+}
+
+.gmail {
+    /* background-color: rgb(255, 0, 0); */
+    border: 1px solid #00000087;
+    text-align: center;
+    margin-left: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.676);
+}
+.gmail:hover {
+    transform: scale(0.99);
+    transition: all ease .5s;
+    box-shadow: 0 8px 10px rgb(116, 6, 6);
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.git {
+    /* background-color: rgb(74, 70, 70); */
+    border: 1px solid #00000087;
+    text-align: center;
+    margin-left: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.676);
+}
+
+.git:hover {
+    transform: scale(0.99);
+    transition: all ease .5s;
+    box-shadow: 0 8px 10px rgba(8, 8, 8, 0.509);
+    background-color: rgb(74, 70, 70);
+    color: white;
+}
+/* Finish contact section */
+/* /////////////////////////////////////////////////////////// */
+/* Start footer section */
+
+/* Finsih footer section */

@@ -12,21 +12,148 @@
 <body>
     <main>
         <header>
+            <!--<div class="header">-->
             <ul class="headerList">
-                <li><a class="main" href="">Главная</a></li>
-                <li><a class="main" href="">Про нас</a></li>
-                <li><a class="main" href="">Контакт</a></li>
-                <li><a class="main" href="">Портфолио</a></li>
+                <li><i class="fa-solid fa-code"></i><b class="info">Информационная платформа</b></li>
+                <span class="infoLine"></span><li><a class="main home" href="#home">Главная</a></li>
+                <span class="infoLine1"></span><li><a class="main about" href="#about">Про нас</a></li>
+                <span class="infoLine2"></span><li><a class="main contact" href="#contact">Контакт</a></li>
+                <span class="infoLine3"></span><li><a class="main portfolio" href="#portfolio">Портфолио</a></li>
+                <li class="header_login">Вход</li>
                 <li>
-                    <a href="../armSide/inde.html"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Armenia.png" alt="Armenia" width="20px" height="20px"></a>
-                    <a href="../rusSide/index.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/2560px-Flag_of_Russia.svg.png" alt="Russia" width="20px" height="20px"></a>
-                    <a href="../enSide/index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/800px-Flag_of_the_United_States.png?20110131151900" alt="USA" width="20px" height="20px"></a>
+                    <a  href="../armSide/inde.html"><img class="arm" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Armenia.png" alt="Armenia" width="20px" height="20px"></a>
+                    <a  href="../rusSide/index.html"><img class="rus" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/2560px-Flag_of_Russia.svg.png" alt="Russia" width="20px" height="20px"></a>
+                    <a  href="../enSide/index.html"><img class="en" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/800px-Flag_of_the_United_States.png?20110131151900" alt="USA" width="20px" height="20px"></a>
                 </li>
             </ul>
         </header>
-        <section>
-            <div class="sectionImg"></div>
+        
+        <section id="home">      
+            <div class="sectionImg">
+                <ul>
+                    <li><h1>Информация для разработчиков/инженеров-программистов</h1></li>
+                    <li><h3>Верьте нам</h3></li>
+                    <li><input  type="text" placeholder="Write you subject" id="text"><button>Поиск</button></li>
+                </ul>
+            </div>
         </section>
+        <section id="about">
+            <div class="aboutSection">
+                <p class="intro">Уроки <i class="fa-solid fa-graduation-cap"></i></p>
+                <div class="backgroundSideWidthText">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        
+        <p class="intro">Введение <i class="fa-solid fa-eject"></i></p>
+        <section id="portfolio">
+            <div class="portfolio_section">
+                <div>
+                    <h2>Java Script <i class="fa-brands fa-square-js"></i></h1>
+                        <p class="dev">Развитие – это процесс, который создает рост, прогресс, позитивные изменения или добавление физических,
+                            экономическая, экологическая, социальная и демографическая составляющие.
+                            Цель развития – повышение уровня и качества жизни населения,
+                            и создание или расширение местных региональных доходов и возможностей трудоустройства,
+                            без ущерба для ресурсов окружающей среды. Развитие видно и полезно,
+                            не обязательно немедленно, и включает аспект качественного изменения и
+                            создание условий для продолжения этих изменений.
+                            Lorem ipsum dolor сидеть amet consectetur adipisicing elit. Исте, немо?
+                            Lorem ipsum dolor сидеть amet consectetur adipisicing elit. Sequi, tempore.
+                            Lorem ipsum dolor сидеть amet consectetur adipisicing elit. Исте, немо?
+                            Lorem ipsum dolor сидеть amet consectetur adipisicing elit. Sequi, tempore.
+                        </p>
+                </div>
+                <div>
+                        <h2>React <i class="fa-brands fa-react"></i></h2>
+                    <p class="eng">
+                        Программная инженерия — это инженерный подход к разработке программного обеспечения.
+                        Инженер-программист — это человек, который применяет процесс инженерного проектирования к проектированию,
+                        разрабатывать, тестировать, поддерживать и оценивать компьютерное программное обеспечение. Термин «программист» иногда используется как синоним.
+                        но может делать упор на реализацию программного обеспечения, а не на проектирование, а также может не иметь отношения к инженерному образованию или навыкам.
+                        Инженерные методы используются для информирования процесса разработки программного обеспечения, который включает в себя определение,
+                        внедрение, оценка, измерение, управление, изменение и улучшение самого процесса жизненного цикла программного обеспечения.
+                    </p>
+                </div>
+                <div>
+                        <h2>NodeJS <i class="fa-brands fa-node-js"></i></h2>
+                    <p class="eng">
+                        Программная инженерия — это инженерный подход к разработке программного обеспечения.
+                          Инженер-программист — это человек, который применяет процесс инженерного проектирования к проектированию,
+                          Разрабатывать, тестировать, поддерживать и оценивать компьютерное программное обеспечение. Термин «программист» иногда используется как синоним.
+                          но можно сделать упор на внедрение программного обеспечения, а не на проектирование, а также не иметь отношения к инженерному образованию или навыкам.
+                          Инженерные методы, используемые для информирования о процессе разработки программного обеспечения, которое включает в себя определение,
+                          внедрение, оценка, измерение, управление, изменение и улучшение самого процесса жизненного цикла программного обеспечения.
+                    </p>
+                </div>
+                <div>
+                        <h2>C++</h2>
+                    <p class="eng">
+                        Программная инженерия — это инженерный подход к разработке программного обеспечения.
+                         Инженер-программист — это человек, который применяет процесс инженерного проектирования к проектированию,
+                         разрабатывать, тестировать, поддерживать и оценивать компьютерное программное обеспечение. Термин «программист» иногда используется как синоним.
+                         но может делать упор на реализацию программного обеспечения, а не на проектирование, а также может не иметь отношения к инженерному образованию или навыкам.
+                         Инженерные методы используются для информирования процесса разработки программного обеспечения, который включает в себя определение,
+                         внедрение, оценка, измерение, управление, изменение и улучшение самого процесса жизненного цикла программного обеспечения.
+                     </p>
+                 </div>
+                <div>
+                        <h2>Python <i class="fa-brands fa-python"></i></h2>
+                    <p class="eng">
+                        Программная инженерия — это инженерный подход к разработке программного обеспечения.
+                         Инженер-программист — это человек, который применяет процесс инженерного проектирования к проектированию,
+                         разрабатывать, тестировать, поддерживать и оценивать компьютерное программное обеспечение. Термин «программист» иногда используется как синоним.
+                         но может делать упор на реализацию программного обеспечения, а не на проектирование, а также может не иметь отношения к инженерному образованию или навыкам.
+                         Инженерные методы используются для информирования процесса разработки программного обеспечения, который включает в себя определение,
+                         внедрение, оценка, измерение, управление, изменение и улучшение самого процесса жизненного цикла программного обеспечения.
+                    </p>
+                </div>
+                <div>
+                        <h2>C#</h2>
+                    <p class="eng">
+                        Программная инженерия — это инженерный подход к разработке программного обеспечения.
+                         Инженер-программист — это человек, который применяет процесс инженерного проектирования к проектированию,
+                         разрабатывать, тестировать, поддерживать и оценивать компьютерное программное обеспечение. Термин «программист» иногда используется как синоним.
+                         но может делать упор на реализацию программного обеспечения, а не на проектирование, а также может не иметь отношения к инженерному образованию или навыкам.
+                         Инженерные методы используются для информирования процесса разработки программного обеспечения, который включает в себя определение,
+                         внедрение, оценка, измерение, управление, изменение и улучшение самого процесса жизненного цикла программного обеспечения.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact_form">
+                <form>
+                    <p class="intro">Контакты <i class="fa-solid fa-address-card"></i></p>
+                    <label>
+                        <input type="text"  id="name" placeholder="Имя">
+                    </label>
+                    <label>
+                        <input type="text" id="lastname" placeholder="Фамилия">
+                    </label>
+                    <label>
+                        <input type="tel" placeholder="Phone" id="Телефон">
+                    </label>
+                    <label>
+                        <input type="email" placeholder="Email" id="Мейл">
+                    </label>
+                 <a class="join" href="">Присоединиться</a>
+                 <a class="gmail" href="https://mail.google.com/mail/u/0/?hl=ru#inbox" target="_blank">Gmail <i class="fa-solid fa-envelope"></i></a>
+                 <a class="git" href="https://github.com/Gev2209?tab=repositories" target="">GIT <i class="fa-brands fa-github"></i></a>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            
+        </footer>
     </main>
+    <script src="./rus.js"></script>
 </body>
 </html>
