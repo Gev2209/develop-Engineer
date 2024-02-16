@@ -181,6 +181,16 @@ li {
 /* //////////////////////////////////////////////////////////////////////////// */
 /* start about Section */
 
+.lesson {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.753));
+}
 
 .backgroundSideWidthText {
     margin-top: 5px;
@@ -270,11 +280,21 @@ li {
 /* finish about Section */
 /* ///////////////////////////////////////////////////////////////////// */
 /* start portfolio Section */
+.intro {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.655));
+}
 
 #portfolio {
-    width: 1100px;
-    min-height: 400px;
-    background-color: #f4e49c73;
+    width: 1200px;
+    /* min-height: 400px; */
+    background-color: #f4e49c2c;
     margin: auto;
     border-radius: 10px;
     backdrop-filter: blur(20px);
@@ -285,8 +305,18 @@ h2 {
     text-align: center;
     color: rgb(236, 235, 235);
     font-size: 20px;
-    text-decoration: underline;
-    padding: 20px 0 20px 0;
+}
+h2 .fa-square-js {
+    color: yellow;
+}
+h2 .fa-react {
+    color: blue;
+}
+h2 .fa-node-js{
+    color: lightgreen;
+}
+h2 .fa-python {
+    color: lightblue;
 }
 
 .dev {
@@ -313,4 +343,11 @@ h2 {
     box-shadow: 0 0 10px white;
     border-radius: 10px;
 }
+
+.portfolio_section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
 /* finish portfolio Section */
