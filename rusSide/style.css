@@ -462,5 +462,20 @@ input:hover {
 /* Finish contact section */
 /* /////////////////////////////////////////////////////////// */
 /* Start footer section */
-
+.footer_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0147;
+    opacity: 0.4;
+    height: 30vh;
+    margin-top: 30px;
+}
+.footer_side ul {
+    display: flex;
+    gap: 10px;
+}
+.footer_side ul a {
+    font-size: 20px;
+}
 /* Finsih footer section */
