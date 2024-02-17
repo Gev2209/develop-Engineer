@@ -1,4 +1,6 @@
-import { line,line1,line2,line3,home,about,contact,portfolio,code,info,arm,rus,en,login,log } from "./helpers.js"
+import { line,line1,line2,line3,home,about,contact,portfolio,code,info,arm,rus,en,login,log,iconF,iconI,iconT,iconL} from "./helpers.js"
+import {transformIconI,transformIconIDown,transformIconF,transformIconFDown,transformIconT,transformIconTDown,
+        transformIconL,transformIconLDown} from "./helpers.js"
 
 // const loginHeader = () => {
 //     login.style.transform = 'translate(0)';
@@ -12,6 +14,22 @@ import { line,line1,line2,line3,home,about,contact,portfolio,code,info,arm,rus,e
 //     login.style.transition = 'all 3s';
 //     login.style.opacity = '0';
 // })
+
+// icon facebook
+iconF.addEventListener('mouseenter',transformIconF)
+iconF.addEventListener('mouseleave',transformIconFDown)
+
+// icon instagram
+iconI.addEventListener('mouseenter',transformIconI)
+iconI.addEventListener('mouseleave',transformIconIDown)
+
+// icon twitter
+iconT.addEventListener('mouseenter',transformIconT)
+iconT.addEventListener('mouseleave',transformIconTDown)
+
+// icon linkedin
+iconL.addEventListener('mouseenter',transformIconL)
+iconL.addEventListener('mouseleave',transformIconLDown)
 
 
 const enFlag = () => {
