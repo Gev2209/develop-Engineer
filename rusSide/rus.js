@@ -1,18 +1,4 @@
-const line = document.querySelector('.infoLine');
-const line1 = document.querySelector('.infoLine1');
-const line2 = document.querySelector('.infoLine2');
-const line3 = document.querySelector('.infoLine3');
-const home = document.querySelector('.home');
-const about = document.querySelector('.about');
-const contact = document.querySelector('.contact');
-const portfolio = document.querySelector('.portfolio');
-const code = document.querySelector('.fa-code');
-const info = document.querySelector('.info');
-const arm = document.querySelector('.arm');
-const rus = document.querySelector('.rus');
-const en = document.querySelector('.en');
-const login = document.querySelector('.login_box');
-const log = document.querySelector('.header_login');
+import { line,line1,line2,line3,home,about,contact,portfolio,code,info,arm,rus,en,login,log } from "./helpers.js"
 
 
 // const loginHeader = () => {
@@ -63,24 +49,6 @@ const armFlagDown = () => {
 }
 arm.addEventListener('mouseleave',armFlagDown)
 // Armenia
-// Flagsssss/////
-// const codeRight = () => {
-//     code.style.transform = 'translate(160px,0) rotate(360deg)';
-//     code.style.transition = 'all 3s';
-//     code.style.zIndex = '1';
-//     info.style.opacity = 0;
-//     info.style.transition = 'all 3s'
-// }
-// code.addEventListener('mouseenter',codeRight);
-
-// const codeLeft = () => {
-//     code.style.transform = 'translate(0) rotate(-360deg)';
-//     code.style.transition = 'all 3s';
-//     code.style.zIndex = '1';
-//     info.style.opacity = 1;
-//     info.style.transition = 'all 3s'
-// }
-// code.addEventListener('mouseleave',codeLeft)
 
 const homeUp = () => {
     line.style.border = '2px solid white';
