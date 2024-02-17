@@ -7,6 +7,8 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/coding.png">
+
     <title>Document</title>
 </head>
 <body>
@@ -128,16 +130,16 @@
                 <form>
                     <p class="intro">Contacts <i class="fa-solid fa-address-card"></i></p>
                     <label>
-                        <input type="text"  id="name" placeholder="Name">
+                        <input type="text"  id="name" placeholder="Name" required>
                     </label>
                     <label>
-                        <input type="text" id="lastname" placeholder="Lastname">
+                        <input type="text" id="lastname" placeholder="Lastname" required>
                     </label>
                     <label>
                         <input type="tel" placeholder="Phone" id="tel">
                     </label>
                     <label>
-                        <input type="email" placeholder="Email" id="mail">
+                        <input type="email" placeholder="Email" id="mail" required>
                     </label>
                  <a class="join" href="">Join</a>
                  <a class="gmail" href="https://mail.google.com/mail/u/0/?hl=ru#inbox" target="_blank">Gmail <i class="fa-solid fa-envelope"></i></a>
@@ -146,9 +148,17 @@
             </div>
         </section>
         <footer>
-            
+            <div class="footer_side">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
         </footer>
     </main>
-    <script src="./arm.js"></script>
+    <script type="module" src="./en.js"></script>
 </body>
 </html>
