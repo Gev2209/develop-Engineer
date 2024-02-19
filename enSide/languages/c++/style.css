@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-color: #0a0147;
+    height: 100vh;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+/* *{
+    border: 1px solid #000;
+} */
+.contact_form {
+    width: 800px;
+    min-height: 400px;
+    background-color: #09429250;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(153, 172, 250, 0.406);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+ form {
+    width: 700px;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.363);
+    color: #0a0147;
+    box-shadow: 0 4px 10px rgba(149, 178, 250, 0.516);
+}
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    margin: auto;
+} 
+
+
+button {
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(2, 0, 117);
+    color: white;
+    border: 1px solid #ffffff2c;
+}
+button:hover {
+    transform: scale(0.99);
+    transition: all ease 1s;
+    background-color: rgb(1, 11, 144);
+}
+
+.registr {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.c {
+    font-size: 150px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: absolute;
+    z-index: 0;
+}
