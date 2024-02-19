@@ -263,76 +263,76 @@ li {
         grid-template-rows: repeat(3,200px);
     }
 }
-.backgroundSideWidthText div {
+.backgroundSideWidthText a {
     border-radius: 5px;
     
 }
 
-.backgroundSideWidthText div:nth-child(1) {
+.backgroundSideWidthText .js {
     background-image: url(./images/js.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
-.backgroundSideWidthText div:nth-child(1):hover {
+.backgroundSideWidthText .js:hover {
     opacity: 0.7;
     transform: scale(0.99);
 }
-.backgroundSideWidthText div:nth-child(2) {
+.backgroundSideWidthText .react {
     background-image: url(./images/react.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
-.backgroundSideWidthText div:nth-child(2):hover {
+.backgroundSideWidthText .react:hover {
     opacity: 0.7;
     transform: scale(0.99);
 }
-.backgroundSideWidthText div:nth-child(3) {
+.backgroundSideWidthText .node {
     background-image: url(./images/node_js.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
-.backgroundSideWidthText div:nth-child(3):hover {
+.backgroundSideWidthText .node:hover {
     opacity: 0.7;
     transform: scale(0.99);
 }
-.backgroundSideWidthText div:nth-child(4) {
+.backgroundSideWidthText .c_plus {
     background-image: url(./images/c++.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
-.backgroundSideWidthText div:nth-child(4):hover {
+.backgroundSideWidthText .c_plus:hover {
     opacity: 0.7;
     transform: scale(0.99);
 }
 
-.backgroundSideWidthText div:nth-child(5) {
+.backgroundSideWidthText .python {
     background-image: url(./images/python.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
-.backgroundSideWidthText div:nth-child(5):hover {
+.backgroundSideWidthText .python:hover {
     opacity: 0.7;
     transform: scale(0.99);
 }
 
-.backgroundSideWidthText div:nth-child(6) {
+.backgroundSideWidthText .c_sharp {
     background-image: url(./images/HD-wallpaper-c-sharp-logo-white-silk-texture-c-sharp-emblem-programming-language-c-sharp-silk-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
-.backgroundSideWidthText div:nth-child(6):hover {
+.backgroundSideWidthText .c_sharp:hover {
     opacity: 0.7;
     transform: scale(0.99);
 }
