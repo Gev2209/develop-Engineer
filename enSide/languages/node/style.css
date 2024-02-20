@@ -81,3 +81,17 @@ button:hover {
 input::placeholder {
     color: white;
 }
+
+
+.green {
+    position: absolute;
+    right: 0;
+    padding: 10px 50px;
+    margin: 5px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: #103e00a5;
+    display: none;
+}

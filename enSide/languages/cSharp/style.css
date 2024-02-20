@@ -93,3 +93,16 @@ input::placeholder {
     position: absolute;
     z-index: 0;
 }
+
+.green {
+    position: absolute;
+    right: 0;
+    padding: 10px 50px;
+    margin: 5px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: #540142c4;
+    display: none;
+}

@@ -11,6 +11,7 @@
     <title>Node.js</title>
 </head>
 <body>
+    <div class="green">Succusfull <i class="fa-solid fa-check"></i></div>
     <main>
         <div class="contact_form">
         <form>
@@ -28,11 +29,12 @@
                 <input type="tel" name="tel" id="tel" required placeholder="Your phone number">
             </label>
             <label>
-                <input type="mail" name="mail" id="mail" required placeholder="Your mail exm. test@mail">
+                <input type="mail" name="mail" id="mail" required placeholder="Your mail ex. test@mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please include an '@' symbol in your email address.">
             </label>
             <p><button>Registr</button></p>
         </form>
     </div>
     </main>
+    <script src="./node.js"></script>
 </body>
 </html>
